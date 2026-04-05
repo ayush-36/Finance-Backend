@@ -118,5 +118,11 @@ Managed using Spring Data JPA
 4 Testing
 
 
+
+Note:-
+Please configure your PostgreSQL credentials in `application.yml` before running the application.
+
+
+
 ## Author
 AYUSH UPADHYAY
