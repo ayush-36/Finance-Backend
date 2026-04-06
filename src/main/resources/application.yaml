@@ -3,9 +3,9 @@ spring:
     name: finance-backend
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/finance_db
-    username: postgres
-    password: your_password_here
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
