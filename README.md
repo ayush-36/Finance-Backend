@@ -62,15 +62,41 @@ A robust backend system for managing financial records with role-based access co
 
 ## 📌 API Documentation
 
-## Swagger UI available at:
-## http://localhost:8080/swagger-ui/index.html
+## 🌐 Live API (Deployed)
 
-## Steps to use:
-1. Register user
-2. Login to get JWT token
-3. Click **Authorize** in Swagger
-4. Enter: BEARER YOUR TOKEN
 
+Swagger UI:
+https://finance-backend-7upq.onrender.com/swagger-ui/index.html  (use this one)
+
+## 🧪 How to Use (Swagger Flow)
+
+1. Open Swagger UI
+2. Register a new user using /auth/register
+3. Login using /auth/login
+4. Copy the JWT token
+5. Click "Authorize" and paste:
+   Bearer <your_token>
+6. Access APIs based on role:
+  - ADMIN → Full access
+  - ANALYST → Read + insights
+  - VIEWER → Dashboard only
+
+
+
+
+## 🗄️ Database Setup
+
+The application uses:
+
+- Local: PostgreSQL (for development)
+- Production: Render PostgreSQL (cloud hosted)
+
+Environment variables are used for configuration:
+- DB_URL
+- DB_USERNAME
+- DB_PASSWORD
+
+This ensures secure and flexible deployment.
 
 ---
 
